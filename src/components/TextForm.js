@@ -32,7 +32,6 @@ export default function TextForm(props) {
           <button className='btn btn-primary button-styling' onClick={handleLowerCase}>Convert to LowerCase</button>
           <button className='btn btn-primary button-styling' onClick={handleReverseCase}>Reverse Text</button>
           <button className='btn btn-primary button-styling' onClick={handleClearCase}>Clear Text</button>
-          <button className='btn btn-primary button-styling' onClick={handleCopy}>Copy Text</button>
         </div>
       </div>
       <div className='container my-2'>
