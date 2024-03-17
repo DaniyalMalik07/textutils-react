@@ -27,7 +27,7 @@ export default function TextForm(props) {
       <div className='container'>
         <h1>{ props.heading }</h1>
         <div className="mb-3">
-          <textarea className="form-control" id="myBox" rows="8" value={text} onChange={handleOnChange}></textarea>
+          <textarea className="form-control" id="myBox" rows="8" value={text} onChange={handleOnChange} style={{ backgroundColor: props.mode==='light' ? 'white' : 'gray', color: props.mode==='dark' ? 'white' : 'gray' }}></textarea>
           <button className='btn btn-primary button-styling' onClick={handleUpcase}>Convert to UpperCase</button>
           <button className='btn btn-primary button-styling' onClick={handleLowerCase}>Convert to LowerCase</button>
           <button className='btn btn-primary button-styling' onClick={handleReverseCase}>Reverse Text</button>
